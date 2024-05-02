@@ -18,11 +18,11 @@ public class TaskTest {
     @BeforeMethod
     public void before() {
         driver = Driver.getDriver();
-        driver.get("https://codewise.studymate.us/login");
+//        driver.get("https://codewise.studymate.us/login");
         loginPage = new LogInPage();
-        loginPage.login.sendKeys("ab.nurzada@gmail.com");
-        loginPage.password.sendKeys("12345678");
-        loginPage.submitButton.click();
+//        loginPage.login.sendKeys("ab.nurzada@gmail.com");
+//        loginPage.password.sendKeys("12345678");
+//        loginPage.submitButton.click();
         sdetNurzPage = new SdetNurzPage();
 
     }
@@ -31,7 +31,7 @@ public class TaskTest {
     public void task() throws InterruptedException {
         sdetNurzPage.taskMethod("This is the input", "This is the comment");
 
-        WebElement message = driver.findElement(By.xpath("//h2[text()='Your homework is reviewed']"));
+        WebElement message = driver.findElement(By.xpath("//div[@class='sc-hjsNop eydhlT']"));
         Assert.assertTrue(message.isDisplayed());
     }
 

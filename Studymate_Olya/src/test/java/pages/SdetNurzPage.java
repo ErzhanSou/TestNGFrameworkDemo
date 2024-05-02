@@ -21,17 +21,21 @@ public class SdetNurzPage {
     @FindBy(xpath="//div[@class='sc-iWOQzb UgwiX']")
     public  WebElement homeAssignment;
 
-    @FindBy(xpath="//div[@class='MuiFormControl-root MuiTextField-root css-1jsik9j']/following::button")
+    @FindBy(xpath="//div[2]/button")
     public WebElement updateButton;
-    @FindBy(xpath="//p[@class='PlaygroundEditorTheme__paragraph']")
+    @FindBy(xpath="(//div[@class='editor-input'])[2]")
     public WebElement inputField;
-    @FindBy(xpath="//button[text()='Submit']")
-    public WebElement submitButton;
     @FindBy(xpath ="//input[@name='comments']")
     public WebElement comments;
+    @FindBy(xpath="//div[2]/button")
+    public WebElement submitButton;
+    @FindBy(xpath = "//nav[@class='sc-bBABsx bcfvVB']/a[@href='/student/courses']")
+    public WebElement goToBackCourses;
 
 
     public void taskMethod(String input, String comment) throws InterruptedException {
+        goToBackCourses.click();
+        Thread.sleep(2000);
         sdet_nurz.click();
         Thread.sleep(2000);
         lesson.click();
@@ -44,7 +48,6 @@ public class SdetNurzPage {
         inputField.sendKeys(input);
         comments.sendKeys(comment);
         submitButton.click();
-
     }
 
 

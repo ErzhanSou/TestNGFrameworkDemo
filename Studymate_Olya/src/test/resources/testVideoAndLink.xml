@@ -12,4 +12,9 @@
             </class>
         </classes>
     </test>
+    <test name="Task test">
+        <classes>
+            <class name="tests.TaskTest"></class>
+        </classes>
+    </test>
 </suite>
