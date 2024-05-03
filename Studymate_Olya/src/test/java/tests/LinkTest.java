@@ -1,50 +1,33 @@
 package tests;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pages.CoursePage;
 import pages.LinksPage;
-import pages.LogInPage;
 import utilities.Driver;
-import utilities.SeleniumUtils;
 
+import java.time.Duration;
 import java.util.Set;
 
 public class LinkTest {
-    LogInPage logInPage;
-    CoursePage coursePage;
-    JavascriptExecutor js;
     WebDriver driver;
     LinksPage linksPage;
+    WebDriverWait wait;
 
-    @BeforeMethod
+    @BeforeSuite
     public void beforeTest() {
         driver = Driver.getDriver();
-//        coursePage = new CoursePage();
-//        logInPage = new LogInPage();
-//
-//        js = (JavascriptExecutor) driver;
-//        driver.get("https://codewise.studymate.us/login");
-//
-//        logInPage.login.sendKeys("pakolhapak@gmail.com");
-//        logInPage.password.sendKeys("Codewise123");
-//        logInPage.submitButton.click();
-//        coursePage.olyaCourse.click();
-//        coursePage.testLessons.click();
-    }
-    @Test
-    public void testLik(){
         linksPage = new LinksPage();
-        SeleniumUtils.waitForSeconds(3);
-        linksPage.link.click();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    }
+    @Test (priority = 1)
+    public void testLik(){
+        wait.until(ExpectedConditions.elementToBeClickable(linksPage.link)).click();
         String mainWindowHandle = driver.getWindowHandle();
+        wait.until(ExpectedConditions.elementToBeClickable(linksPage.linkAtlasobscura)).click();
 
-        linksPage.link1.click();
-
-        SeleniumUtils.waitForSeconds(3);
         Set<String> windows = driver.getWindowHandles();
         for (String windowHandle: windows){
             if (!windowHandle.equals(mainWindowHandle)){
