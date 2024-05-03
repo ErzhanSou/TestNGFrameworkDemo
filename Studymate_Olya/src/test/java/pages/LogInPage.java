@@ -31,4 +31,9 @@ public class LogInPage {
         submitButton.click();
     }
 
+    @FindBy (xpath = "//p[text()='User with email kalambekova@gmail.com not found']")
+    public WebElement invalidUserName;
+
+    @FindBy (xpath = "(//span[@class='sc-ipEyDJ jBKvvv'])[2]")
+    public WebElement passwordIsRequired;
 }
