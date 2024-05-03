@@ -13,5 +13,5 @@ public class LinksPage {
     public WebElement link;
 
     @FindBy(css = "[href=\"https://www.atlasobscura.com/\"]")
-    public WebElement link1;
+    public WebElement linkAtlasobscura;
 }

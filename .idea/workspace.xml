@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43579849-877b-4782-8b5f-32dedc53346e" name="Changes" comment="" />
+    <list default="true" id="43579849-877b-4782-8b5f-32dedc53346e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/TaskPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/CoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/CoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/LinksPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/LinksPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Studymate_Olya/src/test/java/pages/SdetNurzPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Studymate_Olya/src/test/java/tests/LinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Studymate_Olya/src/test/java/tests/LinkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Studymate_Olya/src/test/java/tests/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Studymate_Olya/src/test/java/tests/TaskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Studymate_Olya/src/test/java/tests/VideoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Studymate_Olya/src/test/java/tests/VideoTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,16 +37,40 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.C:/Users/Ержан/Desktop/batch5/SeleniumTestNGDemo/Studymate_Olya/src/test/resources/testVideoAndLink.xml.executor": "Run",
+    "TestNG.LinkTest.executor": "Run",
     "TestNG.TaskTest.executor": "Run",
+    "TestNG.VideoTest.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ержан/Desktop/batch5/SeleniumTestNGTestFramework"
+    "last_opened_file_path": "C:/Users/Ержан/Desktop/batch5/SeleniumJUnitTestFrameworkDemo"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ержан\Desktop\batch5\SeleniumTestNGDemo\Studymate_Olya" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.C:/Users/Ержан/Desktop/batch5/SeleniumTestNGDemo/Studymate_Olya/src/test/resources/testVideoAndLink.xml">
     <configuration name="C:/Users/Ержан/Desktop/batch5/SeleniumTestNGDemo/Studymate_Olya/src/test/resources/testVideoAndLink.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumJUnitTsetFramework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Studymate_Olya/src/test/resources/testVideoAndLink.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumJUnitTsetFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LinkTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -59,10 +94,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VideoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumJUnitTsetFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.VideoTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/Ержан/Desktop/batch5/SeleniumTestNGDemo/Studymate_Olya/src/test/resources/testVideoAndLink.xml" />
         <item itemvalue="TestNG.TaskTest" />
+        <item itemvalue="TestNG.LinkTest" />
+        <item itemvalue="TestNG.VideoTest" />
       </list>
     </recent_temporary>
   </component>
